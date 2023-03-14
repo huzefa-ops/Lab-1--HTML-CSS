@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<head>
+    <title>Welcome to Gmail</title>
+    <style>
+div.form
+{
+    display: block;
+    text-align: center;
+}
+form
+{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+    h2{
+        text-align: center;
+    }
+
+    .login{
+        color: black;
+        width: 500px;
+        padding: 30px;
+        position: absolute;
+        font-size: 30px;
+        top: 05%;
+        right: 960px;
+        line-height: 50px;
+        border-radius: 10px;
+        background: transparent;
+        text-align: left;
+        vertical-align: middle;
+    }
+    input{
+        height: 30px;
+        width: 98%;
+        padding-left: 10px;
+        border-radius: 8px;
+    }
+    input[type=email]:focus {
+  background-color: white;
+}
+button {
+  padding: 10px 15px;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+button:hover {background-color: #3e8e41}
+
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+    
+    #myVideo{
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+    a{
+        color: white;
+        font-size: 14px;
+    }
+    
+    </style>
+</head>
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="video.mp4" type="video/mp4">
+    </video>
+
+    <div class="login" style="border:orange; border-width:5px;  border-style: inset;">
+        <h2>Create Gmail Account</h2>
+            <label for="f_name">Fullname: </label><br>
+            <input type="text" name="f_name" placeholder="Enter Fullname" required><br>
+
+            <label for="Phoneno.">ContactNo.: </label><br>
+            <input type="number" name="Phoneno." placeholder="Contact Number" minlength="10" required>
+            
+            <label for="emailId">Email Id: </label><br>
+            <input type="email" name="emailid" placeholder="Enter Email Id:" required><br>
+            
+            <button>Submit</button>
+            <button>Reset</button>
+        </form>
+    </div>
+</body>
+</html>
